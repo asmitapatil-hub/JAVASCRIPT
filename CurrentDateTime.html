@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<h4>Current Date()</h4>
-
+<button onclick="myFunction()">Click</button>
 <p id="demo"></p>
 
 <script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
+function myFunction() { 
+document.getElementById("demo").innerHTML = new Date();;
+}
 </script>
 
 </body>
