@@ -1,0 +1,30 @@
+<!doctype html>
+<html> 
+ <body>  
+  <p id="emp1"></p> 
+ <p id="emp2"></p>  
+  <script> 
+  class Employee  
+ {   
+ set empId(id)   
+ {     this.id = id;    } 
+
+   set empName(name)   
+ {     this.name = name;    } 
+   set empSalary(salary)    
+{     this.salary = salary;    }  
+  get empId()    {     return this.id;    }  
+  get empName()    {     return this.name;    }  
+  get empSalary()    {     return this.salary;    }    
+netSalary()    {    this.netSal = this.salary * 0.9;     return this.netSal;   }  
+ }    
+  var emp1 = new Employee();  
+ emp1.id = "1";   emp1.name = "Aayansh";  emp1.salary = 500000;    
+ 
+ document.getElementById("emp1").innerHTML = "<h3>Employee 1:</h3> ID: " + emp1.empId +    "<br/>Name: " + emp1.name + "<br/>Salary: " + emp1.salary + "<br/>Net Salary: " + emp1.netSalary();   
+   var emp2 = new Employee();  
+ emp2.id = "2";   emp2.name = "Asmita";   emp2.salary = 600000;   
+   document.getElementById("emp2").innerHTML = "<hr/><h3>Employee 2:</h3> ID: " + emp2.empId +    "<br/>Name: " + emp2.name + "<br/>Salary: " + emp2.salary + "<br/>Net Salary: " + emp2.netSalary();   
+  </script> 
+</body>
+</html>
