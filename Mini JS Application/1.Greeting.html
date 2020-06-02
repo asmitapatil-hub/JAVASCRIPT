@@ -1,0 +1,32 @@
+<html>
+<head>
+<body>
+    <h1 style="color:blue;">Welcome</h1>
+
+    <p>Please enter u name: <input type="text" id="demo1" style="color:red;"></input></p>
+
+    <button onclick="display()">submit</button>
+
+    <h3 style="color: blue;" id="demo"></h3>
+    
+<script>
+        function display() {
+            var x = document.getElementById("demo1").value;
+            var y = new Date();
+            var hr = y.getHours();
+            if (hr > 0 && hr <= 12) {
+                document.getElementById("demo").innerHTML = x +
+                    "good morning have a nice day";
+            } 
+		else if (hr > 12 && hr < 15) {
+                document.getElementById("demo").innerHTML = x +" "+ "good afternoon!";
+	    } 
+		else if (hr > 17 && hr < 24) {
+                document.getElementById("demo").innerHTML = x + " "+"good night!"
+            }
+        }
+    </script>
+
+</body>
+</head>
+</html>
